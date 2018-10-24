@@ -14,11 +14,14 @@
 			<p>上映日期：<span v-text="detail.premiereAt"></span>上映</p>
 			<p>内容介绍：<span v-text="detail.synopsis"></span></p>
 		</div>
-	
+		
+		<div class="buy" v-if="detail.isNowPlaying" @click="goto">立即购票</div>
+		
 	</div>
 </template>
 
 <script>
+
 	export default {
 		data(){
 			return{
@@ -27,7 +30,9 @@
 			}
 		},
 		methods:{
-			
+		 goto(){
+		 	this.$router.push({name:"cinema"})
+		 }
 		},
 		mounted(){
 //			拿到路由传过来的ID
@@ -67,10 +72,15 @@
 	.imgbox img{
 		width:375px;
 		height:210px;
-		
 		vertical-align:middle;
-	
-		
-		
+	}
+	.buy{
+		margin:0 auto;
+		width:200px;
+		height:30px;
+		background-color:orangered;
+		border-radius:20px;
+		text-align:center;
+		line-height:30px;
 	}
 </style>

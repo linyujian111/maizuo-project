@@ -1,6 +1,7 @@
 <template>
   <div id="app">
 		<xheader v-model='isshow'></xheader>
+		
 		<xsidebar v-model='isshow' :z-index=1></xsidebar>
 		<router-view></router-view>
   </div>

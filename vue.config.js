@@ -5,21 +5,16 @@ module.exports={
 				target:'http://m.maizuo.com',
 				ws:true,
 				changeOrigin:true
-			}
+			},
+		'/api': {
+			 target: 'http://localhost:3000',
+			 changeOrigin: true,
+			 secure: false,
+			 pathRewrite: {
+			      '^/api': ''
+			    }
+			 }
+			
 		}
 	}
 }
-
-//module.exports= {
-//dev: {
-//  proxyTable: {
-//    '/somepath': {
-//      target: 'http://a.b.com',
-//      changeOrigin: true,
-//      pathRewrite: {
-//        '^/somepath': '/otherpath'
-//      }
-//    }
-//  }
-//}
-//}

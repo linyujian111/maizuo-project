@@ -1,21 +1,28 @@
 {
-	"name": "maizuo",
-	"version": "0.1.0",
-	"private": true,
-	"scripts": {
-		"serve": "vue-cli-service serve",
-		"build": "vue-cli-service build"
-	},
-	"dependencies": {
-		"axios": "^0.18.0",
-		"mint-ui": "^2.2.13",
-		"vue": "^2.5.17",
-		"vue-router": "^3.0.1",
-		"vuex": "^3.0.1"
-	},
-	"devDependencies": {
-		"@vue/cli-plugin-babel": "^3.0.5",
-		"@vue/cli-service": "^3.0.5",
-		"vue-template-compiler": "^2.5.17"
-	}
+  "name": "maizuo",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "dependencies": {
+    "array": "^0.4.3",
+    "array-find-index": "^1.0.2",
+    "axios": "^0.18.0",
+    "mint-ui": "^2.2.13",
+    "muse-ui": "^3.0.1",
+    "raf.js": "^0.0.4",
+    "vue": "^2.5.17",
+    "vue-lazyload": "^1.2.6",
+    "vue-router": "^3.0.1",
+    "vuex": "^3.0.1"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.0.5",
+    "@vue/cli-service": "^3.0.5",
+    "axios": "^0.18.0",
+    "mongodb": "^2.2.33",
+    "vue-template-compiler": "^2.5.17"
+  }
 }

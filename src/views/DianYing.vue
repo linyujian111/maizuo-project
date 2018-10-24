@@ -37,7 +37,7 @@
 	//	}
 </script>
 
-<style>
+<style scoped>
 	.dianying {
 		background-color: #f9f9f9;
 		/*background-color:white;*/

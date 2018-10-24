@@ -21,7 +21,8 @@
 				text: '我在努力加载中...',
 				spinnerType: 'fading-circle'
 			}),
-			this.$axios.get("v4/api/billboard/home?__t=1539771096623").then(res => {
+			this.$axios.get("v4/api/billboard/home?__t=1540389649096").then(res => {
+			
 				this.imgurl = res.data.data.billboards;
 				Indicator.close();
 
