@@ -44,41 +44,41 @@
 	}
 	
 	.tab {
-		width: 380px;
-		height: 50px;
+		width: 3.8rem;
+		height: 0.5rem;
 		margin: 0 auto;
 		overflow: hidden;
 	}
 	
 	.rb {
-		width: 170px;
-		height: 45px;
+		width: 1.7rem;
+		height: 0.45rem;
 		background-color: yellow;
-		margin-left: 15px;
-		border-bottom: 1px solid #fe6e00;
+		margin-left: 0.15rem;
+		border-bottom: 0.01rem solid #fe6e00;
 		display: inline-block;
 		text-align: center;
-		line-height: 45px;
+		line-height: 0.45rem;
 		background-color: #f9f9f9;
 		box-sizing: border-box;
 		float: left;
 	}
 	
 	.jy {
-		width: 170px;
-		height: 45px;
+		width: 1.7rem;
+		height: 0.45rem;
 		background-color: yellow;
-		margin-right: 15px;
-		border-bottom: 1px solid #fe6e00;
+		margin-right: 0.15rem;
+		border-bottom: 0.01rem solid #fe6e00;
 		display: inline-block;
 		text-align: center;
-		line-height: 45px;
+		line-height: 0.45rem;
 		background-color: #f9f9f9;
 		box-sizing: border-box;
 		float: left;
 	}
 	
 	.active {
-		border-bottom: 3px solid #fe6e00;
+		border-bottom: 0.03rem solid #fe6e00;
 	}
 </style>

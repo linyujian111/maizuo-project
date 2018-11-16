@@ -49,24 +49,29 @@
 					//					this.list.push(res.data.data.films)
 					this.total = res.data.data.page.total;
 
-					this.list.map(film=>{
-						
+					this.list.map(film => {
+
 						var date = new Date(film.premiereAt);
 						film.a = `${date.getMonth()+1}月${date.getDate()}日`;
-			
-						var xingqi=["星期日","星期一","星期二","星期三","星期四","星期五","星期六",]
-							film.b=xingqi[date.getDay()];
-											
+
+						var xingqi = ["星期日", "星期一", "星期二", "星期三", "星期四", "星期五", "星期六", ]
+						film.b = xingqi[date.getDay()];
+
 						return film
 					});
 					//
 				})
 			},
-			gotoxq(filmid,newtitle){
-				
-				this.$router.push({name:"film",params:{id:filmid}})
-				window.sessionStorage.setItem("title",newtitle)
-				this.$store.commit("title",newtitle)
+			gotoxq(filmid, newtitle) {
+
+				this.$router.push({
+					name: "film",
+					params: {
+						id: filmid
+					}
+				})
+				window.sessionStorage.setItem("title", newtitle)
+				this.$store.commit("title", newtitle)
 			}
 
 		},
@@ -81,38 +86,38 @@
 	#nowpfilm {
 		height: 100%;
 		width: 100%;
-		padding: 0 15px;
+		padding: 0 0.15rem;
 	}
 	
 	.filmitem {
 		width: 100%;
-		height: 84px;
-		padding: 20px 0;
+		height: 0.9rem;
+		padding: 0.2rem 0;
 		border-bottom: 1px dashed #ccc;
 		position: relative;
 	}
 	
 	.nowp_l {
-		width: 60px;
-		height: 82px;
+		width: 0.6rem;
+		height: 0.82rem;
 		float: left;
 	}
 	
 	.nowp_l img {
-		width: 60px;
-		height: 82px;
+		width: 0.6rem;
+		height: 0.82rem;
 	}
 	
 	.nowp_c {
-		height: 82px;
-		padding-left: 15px;
+		height: 0.82rem;
+		padding-left: 0.15rem;
 		float: left;
 	}
 	
 	.fname {
-		font-size: 16px;
-		line-height: 30px;
-		height: 30px;
+		font-size: 0.16rem;
+		line-height: 0.3rem;
+		height: 0.3rem;
 		color: #000;
 		overflow: hidden;
 		text-overflow: ellipsis;
@@ -120,39 +125,37 @@
 	}
 	
 	.ftext {
-		font-size: 14px;
-		line-height: 30px;
+		font-size: 0.14rem;
+		line-height: 0.3rem;
 		color: #8e8e8e;
 		;
-		height: 30px;
+		height: 0.3rem;
 		overflow: hidden;
 		text-overflow: ellipsis;
 		white-space: nowrap;
 	}
 	
 	.numall {
-		font-size: 14px;
-		line-height: 20px;
+		font-size: 0.14rem;
+		line-height: 0.2rem;
 		color: #8e8e8e;
-		;
+		white-space: nowrap;
 		overflow: hidden;
 		text-overflow: ellipsis;
-		white-space: nowrap;
-		margin-top:30px;
-		color:orangered
+		margin-top: 0.3rem;
+		color: orangered
 	}
 	
 	.numall .nump {
-		margin-left: 20px;
-		
+		margin-left: 0.2rem;
 	}
 	
 	.ftop {}
 	
 	.fenshuall {
 		position: absolute;
-		right: 30px;
-		top: 20px;
+		right: 0.3rem;
+		top: 0.2rem;
 	}
 	
 	.fenshu {

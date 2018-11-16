@@ -1,7 +1,6 @@
 <template>
   <div id="app">
 		<xheader v-model='isshow'></xheader>
-		
 		<xsidebar v-model='isshow' :z-index=1></xsidebar>
 		<router-view></router-view>
   </div>
@@ -11,24 +10,28 @@
 	import xheader from "@/components/Xheader.vue";
 	import xsidebar from "@/components/Xsidebar.vue";
 
-	export default {
+export default {
 		data(){
 			return{
 				isshow:false,
 			}
 		},
-		components:{
+		components:{ 
 			xheader,
 			xsidebar
 		}
 	}
 </script>
 <style src="@/assets/icon/iconfont.css"></style>
-<style>
+<style> 
 *{
 	margin:0;
 	padding:0;
+	font-family:"黑体";
+		font-size:0.16rem;
+	
 }
+
 html,body{
 	width:100%;
 	height:100%;

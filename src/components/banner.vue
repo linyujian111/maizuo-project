@@ -33,7 +33,7 @@
 
 <style scoped>
 	.banner {
-		height:200px;
+		height:2rem;
 		/*width: 100%;*/
 	}
 	

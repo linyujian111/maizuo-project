@@ -8,6 +8,7 @@ import film from '@/views/xiangqing'
 import cinema from '@/views/cinema'
 import zhuce from '@/views/zhuce'
 import login from '@/views/login'
+import car from '@/views/car'
 
 Vue.use(Router)
 
@@ -31,9 +32,9 @@ export default new Router({
 			name: 'dianying',
 			component: Dianying,
 
-			//    定义子路由（正在热映，即将上映）
+			//    定义二级子路由（正在热映，即将上映）
 			children: [{
-				//这里不需要用/
+				
 				path: "nowpfilm",
 
 				name: "nowpfilm",
@@ -49,6 +50,11 @@ export default new Router({
 			path: "/film/:id",
 			name: "film",
 			component: film,
+		},
+		{
+			path: "/film/:id/car",
+			name: "car",
+			component: car,
 		},
 		{
 			path: "/film/:id/cinema",

@@ -3,15 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "serve": "vue-cli-service serve",
+    "serve": "vue-cli-service serve --open",
     "build": "vue-cli-service build"
   },
   "dependencies": {
     "array": "^0.4.3",
     "array-find-index": "^1.0.2",
     "axios": "^0.18.0",
+    "lib-flexible": "^0.3.2",
     "mint-ui": "^2.2.13",
+    "mongodb": "^2.2.36",
+    "mongodb-core": "^3.1.7",
     "muse-ui": "^3.0.1",
+    "px2rem-loader": "^0.1.9",
     "raf.js": "^0.0.4",
     "vue": "^2.5.17",
     "vue-lazyload": "^1.2.6",
@@ -23,6 +27,7 @@
     "@vue/cli-service": "^3.0.5",
     "axios": "^0.18.0",
     "mongodb": "^2.2.33",
-    "vue-template-compiler": "^2.5.17"
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.25.1"
   }
 }

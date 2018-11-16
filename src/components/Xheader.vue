@@ -35,14 +35,14 @@
 <style scoped>
 #header{
   	width:100%;
-  	height:50px;
+  	height:0.5rem;
   	background-color:black;
   	color:white;
-  	font-size:16px;
-  	line-height:50px;
+  	font-size:0.16rem;
+  	line-height:0.5rem;
   }
 #header .icon-liebiao{
-	margin:0 10px;
+	margin:0 0.1rem;
 }
 
 #header .left{
@@ -51,14 +51,14 @@
 }
 
 #header .right{
-	height:50px;
-	line-height:50px;
-	font-size:16px;
+	height:0.5rem;
+	line-height:0.5rem;
+	font-size:0.16rem;
 	float:right;
 	vertical-align: middle;
 }
 
 #header .icon-mine{
-	margin:0 10px;
+	margin:0 0.1rem;
 }
 </style>
